@@ -1,0 +1,166 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+input,
+textarea,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url(../images/service_3.jpeg);
+  background-size: cover;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Services Section */
+.services {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.gallery h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact input[type="submit"] {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*Zoom Images*/
+.image-container img {
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+/* About Section */
+.about {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
