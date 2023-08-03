@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wedding Planner - Gallery</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Vows & Veils | Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!--Start of header-->
+    <div class="header">
+      <header>
+        <img src="../images/logo_1.png" alt="Logo" />
+      </header>
+      <div class="nav">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="services.html">Services</a></div>
+        <div><a href="aboutus.html">About</a></div>
+        <div><a href="gallery.html">Gallery</a></div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+      <div class="profile_img">
+        <a href="login.html"
+          ><img
+            src="../images/Vector.png"
+            alt="Login"
+            style="height: 33px; padding: 55px"
+        /></a>
+      </div>
+    </div>
+    <!--- End Of Header -->
 
-    <main>
-      <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="image-container">
-          <img src="../images/wedding_1.jpg" alt="Wedding Image 1" />
-          <img src="../images/wedding_2.jpg" alt="Wedding Image 2" />
-          <img src="../images/wedding_3.jpg" alt="Wedding Image 3" />
-        </div>
-      </section>
-    </main>
+    <!--Start of Gallery section-->
+    <div class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img
+          src="../images/wedding_1.jpg"
+          alt="Gallery image 1"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img
+          src="../images/wedding_2.jpg"
+          alt="Gallery image 2"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img
+          src="../images/wedding_3.jpg"
+          alt="Gallery image 3"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img
+          src="../images/wedding_4.jpg"
+          alt="Gallery image 4"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img
+          src="../images/wedding_5.jpg"
+          alt="Gallery image 5"
+          class="gallery__img"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img
+          src="../images/wedding_6.jpg"
+          alt="Gallery image 6"
+          class="gallery__img"
+        />
+      </figure>
+    </div>
+    <!--End of Gallery section-->
 
-    <footer>
-      <p>&copy; 2023 Wedding Planner. All rights reserved.</p>
-    </footer>
+    <!--Footer Section-->
+    <div>
+      <footer class="footer">
+        <p>&copy; 2023 Wedding Planner. All rights reserved.</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </footer>
+    </div>
+    <!--End of footer section-->
   </body>
 </html>

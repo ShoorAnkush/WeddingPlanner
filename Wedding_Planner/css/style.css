@@ -2,6 +2,7 @@
 body,
 h1,
 h2,
+h3,
 p,
 ul,
 li,
@@ -10,62 +11,84 @@ textarea,
 form {
   margin: 0;
   padding: 0;
+  color: black;
 }
-
+.web_logo {
+  height: 200px;
+  width: 250px;
+  margin-top: 10px;
+  position: relative;
+  left: 100px;
+}
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #333;
+  background-color: #f9f9f9;
 }
 
 /* Header */
 header {
-  background-color: #f9f9f9;
-  padding: 20px;
+  background-color: #ff4c68;
+  /* padding: 20px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: inline-block;
+  margin-bottom: -57px;
+  margin-top: -30px;
+  position: relative;
+  left: 1300px;
+  bottom: 100px;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
+  font-weight: bold;
 }
-
+.login {
+  height: 35px;
+  width: 35px;
+  float: right;
+}
 /* Hero Section */
 .hero {
-  background-image: url(../images/service_3.jpeg);
   background-size: cover;
-  color: #fff;
+  color: white;
   padding: 100px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 48px;
   margin-bottom: 20px;
+  color: black;
 }
 
 .hero p {
   font-size: 24px;
   margin-bottom: 40px;
+  color: black;
 }
 
 .btn {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: rgb(255, 76, 104);
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Services Section */
@@ -80,8 +103,12 @@ nav ul li a {
 }
 
 .services ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.services li {
+  margin-bottom: 10px;
 }
 
 /* Gallery Section */
@@ -96,20 +123,22 @@ nav ul li a {
 }
 
 .image-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 .image-container img {
-  width: 32%;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 50px;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 50px;
 }
 
@@ -130,37 +159,85 @@ nav ul li a {
 .contact input,
 .contact textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  resize: vertical;
 }
 
 .contact input[type="submit"] {
   background-color: #ff7f50;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
-/*Zoom Images*/
-.image-container img {
-  transition: transform 0.3s ease;
+main {
+  /* display: flex;
+  justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+.login_image {
+  height: 45px;
+  width: 35px;
+  float: right;
+}
+.login {
+  background-color: #fff;
+  margin-top: -300px;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
 }
 
-.image-container img:hover {
-  transform: scale(1.1);
-}
-/* About Section */
-.about {
-  background-color: #f9f9f9;
-  padding: 50px;
-}
-
-.about h2 {
+.login h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.about p {
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  margin-bottom: 10px;
+}
+
+.login input {
+  padding: 12px;
   margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login input[type="submit"] {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #ff6347;
+}
+/* Footer */
+footer {
+  background-color: white;
+  color: black;
+  /* padding: 20px; */
+  text-align: center;
+  margin-top: 300px;
 }

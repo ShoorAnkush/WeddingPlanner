@@ -3,42 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - VowPerfect Wedding Planner</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Vows & Veils | Contact Us</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 VowPerfect Wedding Planner. All rights reserved.</p>
-    </footer>
+    <!--Start of header-->
+    <div class="header">
+      <header>
+        <img src="../images/logo_1.png" alt="Logo" />
+      </header>
+      <div class="nav">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="services.html">Services</a></div>
+        <div><a href="aboutus.html">About</a></div>
+        <div><a href="gallery.html">Gallery</a></div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+      <div class="profile_img">
+        <a href="login.html"
+          ><img
+            src="../images/Vector.png"
+            alt="Login"
+            style="height: 33px; padding: 55px"
+        /></a>
+      </div>
+    </div>
+    <!--End of header-->
+    <div class="contact">
+      <h4>Talk to Us</h4>
+    </div>
+    <form>
+      <input
+        name="name"
+        type="text"
+        class="feedback-input"
+        placeholder="Name"
+      />
+      <input
+        name="email"
+        type="text"
+        class="feedback-input"
+        placeholder="Email"
+      />
+      <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Comment"
+      ></textarea>
+      <input type="submit" value="SUBMIT" />
+    </form>
+    <!--Footer Section-->
+    <div>
+      <footer class="footer">
+        <p>&copy; 2023 Wedding Planner. All rights reserved.</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </footer>
+    </div>
+    <!--End of footer section-->
   </body>
 </html>
